@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <parameter name="email" value="***"></parameter>
+    <parameter name="password" value="***"></parameter>
+    <test name="GmailTest">
+        <classes>
+            <class name="GmailTest">
+                <methods>
+                    <include name="firstCase"/>
+                    <include name="secondCase"/>
+
+                    <parameter name="subject" value="subject"></parameter>
+                    <parameter name="message" value="message"></parameter>
+                    <include name="thirdCase"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
